@@ -1,0 +1,74 @@
+@import './placeholders';
+@import './constants';
+
+@mixin font-text {
+    @extend %font-display;
+    font-size: 20px;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 600;
+    color: $grey;
+}
+
+@mixin font-card {
+    @extend %font-display;
+    font-size: 17px;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 600;
+    color: $black;
+}
+
+@mixin font-card-price {
+  @extend %font-display;
+  font-size: 17px;
+  font-style: normal;
+  line-height: normal;
+  font-weight: 600;
+  color: $yellow;
+}
+
+@mixin font-card-price-old {
+  @extend %font-display;
+  font-size: 13px;
+  font-style: normal;
+  line-height: normal;
+  font-weight: 600;
+  color: $yellow;
+}
+
+@mixin font-card-points {
+  @extend %font-display;
+  font-size: 20px;
+  font-style: normal;
+  line-height: normal;
+  font-weight: 600;
+  color: $grey;
+}
+
+@mixin link {
+  @extend %font-display;
+  font-size: 17px;
+  font-style: normal;
+  line-height: normal;
+  font-weight: 400;
+  color: $black;
+  &:hover {
+
+  }
+}
+
+  @mixin button {
+    @extend %font-display;
+    font-size: 15px;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 500;
+    color: $black;
+    &:hover {
+
+    }
+    &:disabled {
+      font-weight: 700;
+    }
+}
