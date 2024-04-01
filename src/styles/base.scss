@@ -5,10 +5,10 @@
 #root {
   display: flex;
   flex-direction: column;
-  max-width: 1920px;
   margin: 0 auto;
   text-align: center;
   min-height: 100vh;
+  background-color: rgba(234, 234, 234, 1);
 
   @extend %font-display;
   main {

@@ -1,8 +1,11 @@
+import PageTitle from '../../components/UI/PageTitle/PageTitle.tsx';
+
 function FavouritesPage() {
 
     return (
       <section className="items">
-        <h2 className="items__title">Избранное</h2>
+        <PageTitle>Избранное</PageTitle>
+        <p>Здесь будет реализована функция добавления в избранное</p>
       </section>
     )
 }

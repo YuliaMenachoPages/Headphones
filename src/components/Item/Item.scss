@@ -1,0 +1,116 @@
+@import '../../styles/abstract/constants';
+@import '../../styles/abstract/mixins';
+
+.item {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: $white;
+  border-radius: 30px;
+  height: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.item__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 22px 22px 22px;
+}
+
+.item__img-wrapper {
+  margin: 15px 65px 0 65px;
+  box-sizing: border-box;
+  display: flex;
+  height: 270px;
+  justify-content: center;
+}
+
+.item__picture {
+  object-fit: scale-down;
+}
+
+.item__info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  align-self: flex-end;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+}
+
+.item__name {
+@include font-card;
+  color: $black;
+}
+
+.item__new-price {
+  @include font-card-price;
+  color: $orange;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.item__new-price::after {
+  content: " ₽"
+}
+
+.item__old-price {
+  @include font-card-price-old;
+  color: transparent;
+  text-decoration: line-through;
+  padding: 0;
+  margin: 0;
+}
+
+.item__old-price::after {
+  content: " ₽"
+}
+
+.item__old-price_active {
+  color: $orange;
+}
+
+.item__points {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.item__price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  align-items: flex-end;
+  box-sizing: border-box;
+}
+
+.item__star {
+  border: none;
+  background-image: url("../../vendor/images/Star.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: transparent;
+  width: 23px;
+  height: 21px;
+  margin: 0 10px 0 0;
+  transition: opacity 0.3s;
+  cursor: pointer;
+}
+
+.item__star:hover {
+  opacity: 0.7;
+}
+
+.item__star-counter {
+  @include font-card-points;
+  color: $grey;
+  margin: 0;
+  padding: 0;
+}
+

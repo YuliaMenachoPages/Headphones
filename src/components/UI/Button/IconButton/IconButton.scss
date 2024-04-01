@@ -1,0 +1,25 @@
+@import '../../../../styles/abstract/constants';
+@import '../../../../styles/abstract/mixins';
+
+
+.button__icon {
+  width: 23px;
+  aspect-ratio: 1;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(234, 234, 234, 1);
+  transition: opacity 0.3s;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.button__icon_type_cart {
+  background-image: url("../../../../vendor/images/Cart.svg");
+}
+
+.button__icon_type_like {
+  background-image: url("../../../../vendor/images/Heart.svg");
+}
