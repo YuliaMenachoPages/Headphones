@@ -1,0 +1,145 @@
+@import '../../styles/abstract/constants';
+@import '../../styles/abstract/mixins';
+
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  height: 150px;
+  background-color: $white;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 30px 30px 0 0;
+  align-self: end;
+  padding: 30px;
+  box-sizing: border-box;
+  @media  (max-width: 768px) {
+    height: 300px;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+
+.footer__icon {
+  aspect-ratio: 1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 30px;
+  transition: opacity 0.3s;
+  cursor: pointer;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.footer__icon_type_tg {
+  background-image: url("../../vendor/images/Telegram.svg");
+  margin: 0 10px;
+}
+
+.footer__icon_type_vk {
+  background-image: url("../../vendor/images/VK.svg");
+}
+
+.footer__icon_type_whatsapp {
+  background-image: url("../../vendor/images/Whatsapp.svg");
+}
+
+.footer__lang-button {
+  @include link;
+  border: none;
+  background-color: transparent;
+  transition: opacity 0.3s;
+  cursor: pointer;
+}
+
+.footer__lang-button:hover {
+  opacity: 0.7;
+}
+
+.footer__lang-button_active {
+  color: $orange;
+  font-weight: 700;
+}
+
+.footer__lang-icon {
+  background-image: url("../../vendor/images/Lang.svg");
+  width: 16px;
+  aspect-ratio: 1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.footer__langs {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  padding: 0;
+}
+
+.footer__logo {
+  align-self: flex-start;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__nav {
+  display: flex;
+  align-items: stretch;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__nav-link {
+  text-decoration: none;
+  transition: opacity 0.3s;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+  color: rgba(0, 0, 0, 1);
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.footer__nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  list-style: none;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__conditions {
+  margin: 0;
+  @media  (max-width: 768px) {
+  text-align: left;
+  }
+}
+
+.footer__social {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+  margin: 0;
+  @media  (max-width: 768px) {
+    gap: 40px;
+    justify-content: center;
+  }
+}
+
+.footer__iconLink {
+  width: 30px;
+  height: 30px;
+}

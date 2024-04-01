@@ -1,9 +1,11 @@
+import PageTitle from '../../components/UI/PageTitle/PageTitle.tsx';
+
 function ContactsPage() {
 
     return (
             <section className="items">
-              <h2 className="items__title">Наш адрес</h2>
-              <p>Здесь будет адрес организации</p>
+              <PageTitle>Наш адрес</PageTitle>
+              <p>Здесь будет размещен адрес организации</p>
             </section>
     )
 }

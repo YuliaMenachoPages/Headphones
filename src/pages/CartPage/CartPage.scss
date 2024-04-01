@@ -1,0 +1,60 @@
+@import '../../styles/abstract/constants';
+@import '../../styles/abstract/mixins';
+
+.cart {
+  margin: 0 auto 20px auto;
+}
+
+.cart__buy {
+  background-color: $white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 18px;
+  width: 350px;
+}
+
+.cart__container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.cart__amount {
+  &::before {
+    content: "₽ "
+  }
+}
+
+.cart__button-link {
+  color: $white;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1240px) {
+  .cart__container {
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.cart__items-container {
+  list-style: none;
+  padding: 0;
+  margin: 0 20px 15px 0;
+  width: 620px;
+}
+
+.cart__total-amount {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: 0 22px;
+  box-sizing: border-box;
+}
+

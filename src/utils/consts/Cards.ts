@@ -1,7 +1,24 @@
+import pic1 from '../../vendor/images/h1.jpg';
+import pic2 from '../../vendor/images/h2.jpg';
+import pic3 from '../../vendor/images/h3.jpg';
+import pic4 from '../../vendor/images/hw1.jpg';
+import pic5 from '../../vendor/images/hw2.jpg';
+import pic6 from '../../vendor/images/hw3.jpg';
+
+export type TCard = {
+  id: string,
+  img: string,
+  title: string,
+  priceNew: string,
+  priceOld: string,
+  rate: string,
+  quantity: number,
+}
+
 const headphones = [
     {
         id: 'h1',
-        img: '../images/h1.jpg',
+        img: pic1,
         title: 'Apple BYZ S852I',
         priceNew: '2927',
         priceOld: '3527',
@@ -10,7 +27,7 @@ const headphones = [
     },
     {
         id: 'h2',
-        img: '../images/h2.jpg',
+        img: pic2,
         title: 'Apple EarPods',
         priceNew: '2327',
         priceOld: '',
@@ -19,7 +36,7 @@ const headphones = [
     },
     {
         id: 'h3',
-        img: '../images/h3.jpg',
+        img: pic3,
         title: 'Apple EarPods',
         priceNew: '2327',
         priceOld: '',
@@ -28,7 +45,7 @@ const headphones = [
     },
     {
         id: 'h4',
-        img: '../images/h1.jpg',
+        img: pic1,
         title: 'Apple BYZ S852I',
         priceNew: '2927',
         priceOld: '',
@@ -37,7 +54,7 @@ const headphones = [
     },
     {
         id: 'h5',
-        img: '../images/h2.jpg',
+        img: pic2,
         title: 'Apple EarPods',
         priceNew: '2327',
         priceOld: '',
@@ -46,45 +63,18 @@ const headphones = [
     },
     {
         id: 'h6',
-        img: '../images/h3.jpg',
+        img: pic3,
         title: 'Apple EarPods',
         priceNew: '2327',
         priceOld: '',
         rate: '4.5',
         quantity: 0,
     },
-    {
-        id: 'hw1',
-        img: '../images/hw1.jpg',
-        title: 'Apple AirPods',
-        priceNew: '9527',
-        priceOld: '',
-        rate: '4.7',
-        quantity: 0,
-    },
-    {
-        id: 'hw2',
-        img: '../images/hw2.jpg',
-        title: 'GERLAX GH-04',
-        priceNew: '6527',
-        priceOld: '',
-        rate: '4.7',
-        quantity: 0,
-    },
-    {
-        id: 'hw3',
-        img: '../images/hw3.jpg',
-        title: 'BOROFONE BO4',
-        priceNew: '7527',
-        priceOld: '',
-        rate: '4.7',
-        quantity: 0,
-    },
 ]
 const headphonesWireless = [
     {
         id: 'hw1',
-        img: '../images/hw1.jpg',
+        img: pic4,
         title: 'Apple AirPods',
         priceNew: '9527',
         priceOld: '',
@@ -93,7 +83,7 @@ const headphonesWireless = [
     },
     {
         id: 'hw2',
-        img: '../images/hw2.jpg',
+        img: pic5,
         title: 'GERLAX GH-04',
         priceNew: '6527',
         priceOld: '',
@@ -102,7 +92,7 @@ const headphonesWireless = [
     },
     {
         id: 'hw3',
-        img: '../images/hw3.jpg',
+        img: pic6,
         title: 'BOROFONE BO4',
         priceNew: '7527',
         priceOld: '',
